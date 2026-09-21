@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "locapro (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "locapro (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
