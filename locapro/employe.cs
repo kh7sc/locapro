@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace locapro
 {
-    internal class employe
+    internal class Employee
     {
         private int ad_id;
+
+        public Employee(int ad_id)
+        {
+            this.ad_id = ad_id;
+        }
+
+        public int Ad_id { get => ad_id; set => ad_id = value; }
     }
 }
