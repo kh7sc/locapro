@@ -16,7 +16,7 @@ namespace locapro
         private string phone;
         private string email;
 
-        public Agency(int agency_id, string name, string address, string zip_code, string phone, string email)
+        public Agency (int agency_id, string name, string address, string zip_code, string phone, string email)
         {
             this.Agency_id = agency_id;
             this.Name = name;

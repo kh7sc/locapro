@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace locapro
 {
-    internal class Vehicle
+    internal class Vehicule
     {
         private string license_plate;
         private decimal mileage_km;
         private string fuel_type;
 
-        public Vehicle(string license_plate, decimal mileage_km, string fuel_type)
+        public class Item : Vehicule
+        {
+            public Item(string license_plate, decimal mileage_km, string fuel_type) : base(license_plate, mileage_km, fuel_type) { }
+        }
+
+        public Vehicule(string license_plate, decimal mileage_km, string fuel_type)
         {
             this.License_plate = license_plate;
             this.Mileage_km = mileage_km;
