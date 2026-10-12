@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace locapro
 {
-    internal class event_equipment
+    internal class Event_equipment
     {
         private bool is_electric;
         private int quantity;
+
+        public Event_equipment(bool is_electric, int quantity)
+        {
+            this.Is_electric = is_electric;
+            this.Quantity = quantity;
+        }
+
+        public bool Is_electric { get => is_electric; set => is_electric = value; }
+        public int Quantity { get => quantity; set => quantity = value; }
     }
 }
