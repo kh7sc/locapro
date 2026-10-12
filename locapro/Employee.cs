@@ -9,6 +9,10 @@ namespace locapro
     internal class Employee
     {
         private int ad_id;
+        public class Users : Employee
+        {
+            public Users(int ad_id) : base(ad_id) { }
+        }
 
         public Employee(int ad_id)
         {

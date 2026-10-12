@@ -11,6 +11,11 @@ namespace locapro
         private bool is_electric;
         private int quantity;
 
+        public class Item : Event_equipment
+        {
+            public Item(bool is_electric, int quantity) : base(is_electric, quantity) { }
+        }
+
         public Event_equipment(bool is_electric, int quantity)
         {
             this.Is_electric = is_electric;

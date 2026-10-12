@@ -11,6 +11,11 @@ namespace locapro
         private string caces_reqired;
         private decimal weight_kg;
 
+        public class Item : Heavy_machinery
+        {
+            public Item(string caces_reqired, decimal weight_kg) : base(caces_reqired, weight_kg) { }
+        } 
+
         public Heavy_machinery(string caces_reqired, decimal weight_kg)
         {
             this.Caces_reqired = caces_reqired;

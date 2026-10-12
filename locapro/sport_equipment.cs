@@ -11,6 +11,11 @@ namespace locapro
         private string skill_level;
         private string season;
 
+        public class Item : Sport_equipment
+        {
+            public Item(string skill_level, string season) : base(skill_level, season) { }
+        }
+
         public Sport_equipment(string skill_level, string season)
         {
             this.Skill_level = skill_level;

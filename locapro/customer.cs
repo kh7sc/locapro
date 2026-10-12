@@ -10,6 +10,11 @@ namespace locapro
     {
         private int contract_count;
 
+        public class Users : Customer
+        {
+            public Users(int contract_count) : base(contract_count) { }
+        }
+
         public Customer(int contract_count)
         {
             this.Contract_count = contract_count;
