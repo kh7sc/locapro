@@ -12,5 +12,6 @@ namespace locapro
         private string status;
         private DateTime strat_date;
         private DateTime end_date;
+        private string cloud_link;
     }
 }
